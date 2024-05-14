@@ -14,8 +14,9 @@ const App = () => {
         {/* 3. 폴더(Route)를 만든다 */}
         <Route path="/" element={<Home />} />
         <Route path="/A" element={<A />} />
-        <Route path="/:id" element={<Detail />} />
-        <Route path="*" element={<NotFound404 />} />
+        <Route path="coins/:id" element={<Detail />} />{" "}
+        {/*이런 식으로 페이지를 동적인 이름으로 만들어줄 수 있음*/}
+        <Route path="/*" element={<NotFound404 />} />
       </Routes>
     </BrowserRouter>
   );
