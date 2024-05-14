@@ -6,6 +6,7 @@ import C from "./pages/C";
 import Detail from "./pages/Detail";
 import NotFound404 from "./pages/404NotFound";
 import Layout from "./components/Layout";
+import Admin from "./pages/Admin";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/b" element={<B />} />
           <Route path="/c" element={<C />} />
           <Route path="/coin/:id" element={<Detail />} />
+          <Route path="/Admin/:password" element={<Admin />} />
         </Route>
         <Route path="/*" element={<NotFound404 />} />
       </Routes>
