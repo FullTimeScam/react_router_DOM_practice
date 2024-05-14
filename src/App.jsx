@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import A from "./pages/a";
+import A from "./pages/A";
+import B from "./pages/B";
+import C from "./pages/C";
 import Detail from "./pages/Detail";
 import NotFound404 from "./pages/404NotFound";
 
@@ -14,7 +16,9 @@ const App = () => {
         {/* 3. 폴더(Route)를 만든다 */}
         <Route path="/" element={<Home />} />
         <Route path="/A" element={<A />} />
-        <Route path="coins/:id" element={<Detail />} />{" "}
+        <Route path="/B" element={<B />} />
+        <Route path="/C" element={<C />} />
+        <Route path="coins/:id" element={<Detail />} />
         {/*이런 식으로 페이지를 동적인 이름으로 만들어줄 수 있음*/}
         <Route path="/*" element={<NotFound404 />} />
       </Routes>

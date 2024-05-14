@@ -1,9 +1,9 @@
-const A = () => {
+const C = () => {
   return (
     <div className="bg-blue-100 min-h-screen flex justify-center items-center">
-      A
+      C
     </div>
   );
 };
 
-export default A;
+export default C;
