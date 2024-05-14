@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import A from "./pages/a";
+import Detail from "./pages/Detail";
 import NotFound404 from "./pages/404NotFound";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         {/* 3. 폴더(Route)를 만든다 */}
         <Route path="/" element={<Home />} />
         <Route path="/A" element={<A />} />
+        <Route path="/:id" element={<Detail />} />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </BrowserRouter>
