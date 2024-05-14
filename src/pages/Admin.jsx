@@ -12,7 +12,7 @@ const Admin = () => {
     }
   }, []);
   return (
-    <div className="bg-blue-100 min-h-screen flex justify-center items-center">
+    <div className="bg-purple-900 text-white font-bold min-h-screen flex justify-center items-center">
       Admin
     </div>
   );
