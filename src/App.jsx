@@ -19,8 +19,8 @@ const App = () => {
           <Route path="/b" element={<B />} />
           <Route path="/c" element={<C />} />
           <Route path="/coin/:id" element={<Detail />} />
-          <Route path="/*" element={<NotFound404 />} />
         </Route>
+        <Route path="/*" element={<NotFound404 />} />
       </Routes>
     </BrowserRouter>
   );
